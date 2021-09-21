@@ -1,5 +1,6 @@
 "use strict";
 class App {
+  main = document.querySelector("main");
   avatar = document.querySelector("#avatar__img");
   fullName = document.querySelector(".info__name");
   username = document.querySelector(".info__username");
@@ -28,6 +29,7 @@ class App {
       this.dataRequest.addEventListener("load", getData.bind(this));
 
       function getData() {
+        this.main.classList.toggle("hidden");
         let data = JSON.parse(this.dataRequest.responseText);
         link.setAttribute("href", data["url"]);
         this.bio.textContent = data["bio"];
