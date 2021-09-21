@@ -9,6 +9,9 @@
 }
 
 /* Header */
+.hidden {
+  display: none;
+}
 
 header {
   display: flex;
