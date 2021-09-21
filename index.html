@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>GitHub user search app</title>
+</head>
+
+<body id="bodyEle">
+  <div class="wrapper">
+    <header>
+      <h2 id="title__name">DevFinder</h2>
+    </header>
+    <div class="search__bar__container">
+      <div>
+        <img id="seachbar_icon" src="./assets/icon-search.svg" alt="searchIcon">
+        <input type="text" name="serachBar" value="" id="searchbar_input" placeholder="Search GitHub username…">
+      </div>
+      <button id="search__btn" type="button">Search</button>
+      </form>
+    </div>
+
+    <main class="">
+      <!-- flex:row -->
+
+      <div class="user__info_container">
+        <div class="user__inner_container">
+          <div id="avatar__image__container">
+            <img id="avatar__img" src="./assets/Avatar.svg" alt="Avatar">
+          </div>
+          <div class="username__info">
+            <div class="info__name">The Octocat</div>
+            <div class="info__username">octocat</div>
+            <div class="info__date">Joined 25 Jan 2011</div>
+          </div>
+        </div>
+        <p id="info__para">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.
+        </p>
+        <div class="bottom__info">
+          <!-- flex column -->
+          <div class="reps_follwr__follwing_cont">
+            <div class="repos__table">
+              <div>
+                <h4>Repos</h4>
+                <h3 id="repo">8</h3>
+              </div>
+              <div>
+                <h4>Followers</h4>
+                <h3 id="followers">3678</h3>
+              </div>
+              <div>
+                <h4>Following</h4>
+                <h3 id="following">23</h3>
+              </div>
+            </div>
+          </div>
+          <div class="social_links">
+            <!-- grid-->
+            <div class="social_link_icons">
+              <img src="./assets/icon-location.svg" alt="">
+              <p id="location">San Frans</p>
+            </div>
+            <div class="social_link_icons"><img src="./assets/icon-twitter.svg" alt="">
+              <p id="tweeter">not Available</p>
+            </div>
+            <div class="social_link_icons"><img src="./assets/icon-website.svg" alt="">
+              <a href="#" id="link" target="_blank">www.xzy.com</a>
+            </div>
+            <div class="social_link_icons"><img src="./assets/icon-company.svg" alt="">
+              <p>agtihub</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
